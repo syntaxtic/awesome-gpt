@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome GPT</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1e1e1e;
+        color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color: #ff6347;
+      }
+      header p {
+        font-size: 1.2rem;
+        color: #ccc;
+      }
+      .gpt-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        width: 80%;
+        max-width: 1200px;
+      }
+      .gpt-item {
+        background-color: #292929;
+        border-radius: 10px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+      .gpt-item:hover {
+        transform: translateY(-5px);
+      }
+      .gpt-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        object-fit: cover;
+      }
+      .gpt-item h2 {
+        color: #ff6347;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .gpt-item p {
+        color: #bbb;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .gpt-item a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff6347;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .gpt-item a:hover {
+        background-color: #ff4500;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Awesome GPT</h1>
+      <p>Your gateway to practical GPTs</p>
+    </header>
+    <main class="gpt-list">
+      <div class="gpt-item">
+        <img src="./assets/review-brief.png" alt="Review Brief" />
+        <h2>Review Brief</h2>
+        <p>
+          Get a brief of reviews and opinions on books, movies, shows, and art
+          pieces from across the web. Review Brief distills key insights,
+          highlighting what people love, dislike, and find interesting, giving
+          you the full picture without any fluff.
+        </p>
+        <a href="#">Try it</a>
+      </div>
+      <div class="gpt-item">
+        <img src="./assets/fix-my-english.png" alt="Fix My English" />
+        <h2>Fix My English</h2>
+        <p>
+          Your go-to assistant for perfecting everyday English. Whether you're
+          chatting with friends, sending a quick email, or posting on social
+          media, Fix My English ensures your messages are clear, concise, and
+          convey the right tone. Paste your message, and it'll confirm that
+          everything is all right.
+        </p>
+        <a href="#">Try it</a>
+      </div>
+    </main>
+  </body>
+</html>
